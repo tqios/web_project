@@ -52,68 +52,10 @@ a:hover {
   min-width: 700px;
   max-width: 1000px;
 }
-article {
-  border-bottom: 1px solid black;
-}
 
-.comic_img {
-  padding-left: 20px;
-  width: 150px;
-  height: 150px;
+#contents_num {
+  padding: 10px 0 0 40px;
 }
-.info {
-  float: left;
-  padding-left: 15px;
-}
-.comic_info {
-  margin: 0 auto;
-  min-width: 500px;
-  max-width: 700px;
-  height: 200px;
-  padding: 20px 10px;
-}
-.writer {
-  font-size: 10px;
-  font-weight: normal;
-}
-
-.info_detail {
-  padding: 10px 0;
-}
-.genre_age {
-  padding: 5px;
-  padding-left: 0px;
-  font-size: 13px;
-}
-.button_group {
-  padding: 0;
-  list-style: none;
-  text-align: right;
-}
-.button_group li {
-  display: inline;
-  padding: 3px;
-  border: 1px solid black;
-}
-
-.contents {
-  padding-top: 10px;
-  padding-bottom: 90px;
-  margin: 0 auto;
-  max-width: 700px;
-}
-.sort_contents {
-  font-size: 15px;
-  font-weight: bolder;
-  text-align: left;
-  padding: 5px;
-} 
-.sort_as {
-  padding: 5px;
-  margin-left: 40px;
-  background-color: #eee;
-}
-
 .list_contents {
   list-style: none;
   padding: 0;
@@ -123,25 +65,30 @@ article {
   padding-left: 40px;
   border-bottom: 1px solid black;
 }
-.episode_img {
+.content_img {
   float: left;
   padding: 10px 0;
   width: 100px;
   height: 100px;
 }
-.episode_link {
+.content_link {
   display: block;
 }
-.episode_info {
+.content_info {
   margin: 35px 0;
   float: left;
   min-width: 300px;
   max-width: 500px;
   height: 50px;
 }
-.episode , .episode_title {
+.content{
   display: inline;
 }
-.episode_update {
+.content_writer {
   padding-top: 10px;
+}
+.delete_content {
+  position: relative;
+  left: 100px;
+  top: 50px;
 }
