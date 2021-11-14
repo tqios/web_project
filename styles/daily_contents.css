@@ -1,0 +1,147 @@
+h1, h3, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100%;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: royalblue;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: white;
+  z-index: 10;
+  min-width: 700px;
+  max-width: 1000px;
+  border-bottom: 1px solid black;
+}
+#title {
+  display: inline-block;
+  padding: 0 20px;
+  width: 60%;
+}
+.menu_header ul {
+  list-style: none;
+  display: inline;
+  padding: 5px 0;
+}
+.menu_header ul li {
+  display: inline;
+  padding: 0 5px;
+}
+
+#section {
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top: 80px;
+  margin: 0 auto;
+  z-index: 8;
+  min-width: 700px;
+  max-width: 1000px;
+}
+article {
+  border-bottom: 1px solid black;
+}
+
+.comic_img {
+  padding-left: 20px;
+  width: 150px;
+  height: 150px;
+}
+.info {
+  float: left;
+  padding-left: 15px;
+}
+.comic_info {
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 700px;
+  height: 200px;
+  padding: 20px 10px;
+}
+.writer {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.info_detail {
+  padding: 10px 0;
+}
+.genre_age {
+  padding: 5px;
+  padding-left: 0px;
+  font-size: 13px;
+}
+.button_group {
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+.button_group li {
+  display: inline;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+.contents {
+  padding-top: 10px;
+  padding-bottom: 90px;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.sort_contents {
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: left;
+  padding: 5px;
+} 
+.sort_as {
+  padding: 5px;
+  margin-left: 40px;
+  background-color: #eee;
+}
+
+.list_contents {
+  list-style: none;
+  padding: 0;
+}
+.list_content {
+  clear: both;
+  padding-left: 40px;
+  border-bottom: 1px solid black;
+}
+.episode_img {
+  float: left;
+  padding: 10px 0;
+  width: 100px;
+  height: 100px;
+}
+.episode_link {
+  display: block;
+}
+.episode_info {
+  margin: 35px 0;
+  float: left;
+  min-width: 300px;
+  max-width: 500px;
+  height: 50px;
+}
+.episode , .episode_title {
+  display: inline;
+}
+.episode_update {
+  padding-top: 10px;
+}
