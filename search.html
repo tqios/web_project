@@ -1,0 +1,43 @@
+# web_project
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹툰페이지</title>
+  <link type="text/css" rel="stylesheet" href="./index.css">
+</head>
+
+<script>
+    function enterkey() {
+        if (window.event.keyCode == 13) {
+            Search();
+        }
+    }
+</script>
+
+<header id = "header" role = "banner" class = "header_search">
+    
+    <div class = "inner_header">
+        <h1 class = "logo">
+            <a class = "link_logo">
+                <a href="#"onclick="location.href='index.html'">웹툰 페이지</a>
+            </a>
+        </h1>
+
+<form action class = "webtoonsearch">
+
+    <fieldset>
+    <ul>
+
+        <label for="search_name">검색</label>
+        <input onkeyup="enterkey();" id="search" placeholder = "작품명, 작가, 장르" autocomplete = 'off'/>
+        <a href="#" onclick="location.href='index.html'">닫기</a>
+
+    </ul>
+    </fieldset>
+
+</header>
