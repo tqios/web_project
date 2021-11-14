@@ -25,6 +25,7 @@ a:hover {
   z-index: 10;
   min-width: 700px;
   max-width: 1000px;
+  border-bottom: 1px solid black;
 }
 #title {
   display: inline-block;
@@ -45,14 +46,13 @@ a:hover {
 #nav {
   background-color: white;
   position: fixed;
-  top: 80px;
+  top: 83.4px;
   left: 0;
   right: 0;
   margin: 0 auto;
   z-index: 10;
   min-width: 700px;
   max-width: 1000px;
-  border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 .menu_nav ul{
@@ -104,4 +104,17 @@ a:hover {
 }
 .list_daily_col_inner ul li{
   display: inline;
+}
+
+#footer {
+  position: relative; 
+  left: 0;
+  right: 0;
+  top: 250px;
+  margin: 0 auto;
+  z-index: 8;
+  text-align: center;
+  min-width: 700px;
+  max-width: 1000px;
+  border-top: 1px solid black;
 }
