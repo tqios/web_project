@@ -1,0 +1,15 @@
+
+.login {
+    position : absolute;
+    left : 50%;
+    top : 25%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .loginor {
+    position : absolute;
+    text-align: center;
+  
+  }
+  
