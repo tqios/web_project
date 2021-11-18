@@ -1,0 +1,161 @@
+h1, h3, h4, p, div{
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100%;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover ,button:hover{
+  color: royalblue;
+}
+
+#header {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: white;
+  z-index: 10;
+  min-width: 700px;
+  max-width: 1000px;
+  border-bottom: 1px solid black;
+}
+#title {
+  display: inline-block;
+  padding: 0 20px;
+  width: 60%;
+}
+.menu_header ul {
+  list-style: none;
+  display: inline;
+  padding: 5px 0;
+}
+.menu_header ul li {
+  display: inline;
+  padding: 0 5px;
+}
+
+#section {
+  margin: 0 auto;
+  z-index: 8;
+  min-width: 700px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+
+.comic_img {
+  padding-left: 20px;
+  width: 150px;
+  height: 150px;
+}
+.info {
+  float: left;
+  padding-left: 15px;
+}
+.comic_info {
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 700px;
+  height: 200px;
+  padding: 20px 10px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+.writer {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.info_detail {
+  padding: 10px 0;
+}
+.genre_age {
+  padding: 5px;
+  padding-left: 0px;
+  font-size: 13px;
+}
+.button_group {
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+.button_group li {
+  display: inline;
+  padding: 3px;
+  border: 1px solid black;
+}
+
+.image {
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+}
+
+.image img {
+  width: 700px;
+}
+
+.comment {
+  width: 700px;
+  margin: 0 auto;
+}
+.writer_c{
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+.writer_c h3 {
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+}
+.writer_c span {
+  font-size: 15px;
+  font-weight: normal;
+}
+.writer_c p {
+  padding: 10px;
+}
+
+#writing_c {
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+#writing_c h4 {
+  padding: 10px;
+}
+#writing_c textarea{
+  margin-left: 10px;
+  resize: none;
+}
+#writing_c button {
+  position: relative;
+  bottom: 7px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+
+.reader_c {
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.reader_c li {
+  border-bottom: 1px solid black;
+}
+.reader_c h4 {
+  border-bottom: 1px solid gainsboro;
+  padding: 10px;
+}
+.reader_c p {
+  padding: 10px;
+  font-size: 13px;
+}
