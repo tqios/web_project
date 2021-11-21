@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>로그인</title>
+  <script src="../js/login.js"></script>
+  <link type="text/css" rel="stylesheet" href="../styles/index.css">
   <link type="text/css" rel="stylesheet" href="../styles/login.css">
 </head>
 
@@ -16,55 +18,59 @@
         <h1 id="title">웹툰페이지</h1>
       </a>
       <span class="menu_header">
-        </a>
-        <span class="menu_header">
-          <ul>
-            <li>
-              <a href="./search.html">
-                <span>검색</span>
-              </a>
-            </li>
-            <li>
-              <a href="./mylibrary.html">
-                <span>내서재</span>
-              </a>
-            </li>
-            <li>
-              <a href="./login.html">
-                <span>내정보</span>
-              </a>
-            </li>
-          </ul>
-        </span>
+        <ul>
+          <li>
+            <a href="./search.html">
+              <span>검색</span>
+            </a>
+          </li>
+          <li>
+            <a href="./mylibrary.html">
+              <span>내서재</span>
+            </a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <span>내정보</span>
+            </a>
+          </li>
+        </ul>
+      </span>
     </header>
 
-    <form action="index.html" method="post" class="loginForm">
+    <div>
+      <div class="login">
 
-      <h2>로그인</h2>
+        <h1>로그인</h1>
 
-      <div class="idForm">
-        <input type="text" class="id" placeholder="ID">
+        <div class="form-wrap">
+
+          <form id="login_form">
+
+            <label for="inputId"> ID: </label>
+
+            <input id="id" type="id" placeholder="ID를 입력해주세요">
+
+            <p>
+
+              <label for="inputPw"> PW: </label>
+
+              <input id="pw" type="password" placeholder="비밀번호를 입력해주세요">
+            </p>
+
+        </div>
+
+        <div class="loginor">
+          <p>
+            <input type="button" value="로그인" onclick="login();">
+          </p>
+
+          또는 <p> <a href="email.html">이메일로 회원가입</a>
+          </p>
+        </div>
       </div>
-
-      <div class="passForm">
-        <input type="password" class="pw" placeholder="PW">
-      </div>
-
-      <button class="loginid">
-        <p>
-          <a href="../../../index.html">로그인</a>
-        </p>
-      </button>
-
-      <button class="loginpw">
-        <p>
-          <a href="./email.html">이메일로 회원가입</a>
-        </p>
-
-      </button>
-
-    </form>
-
+    </div>
+  </div>
 </body>
 
 </html>
