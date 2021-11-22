@@ -1,4 +1,4 @@
-h1, h3, h4, p, div{
+h1, h3, h4, p, div, body {
   margin: 0;
   padding: 0;
 }
@@ -15,10 +15,6 @@ a:hover ,button:hover{
 }
 
 #header {
-  /* position: fixed; */
-  top: 0;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   padding: 20px 0;
   background-color: white;
@@ -159,3 +155,30 @@ a:hover ,button:hover{
   padding: 10px;
   font-size: 13px;
 }
+
+#remote{
+  min-width: 150px;
+  position: fixed;
+  top: 300px;
+  right: 0;
+  border: 1px solid gray;
+  background-color: whitesmoke;
+  cursor: default;
+}
+#remote td, #remote th{
+  border: 1px solid gainsboro;
+  height: 30px;
+  width: 40px;
+  font-size: 13px;
+  text-align: center;
+}
+#remote th {
+  cursor:move;
+}
+ #close_r {
+   position: relative;
+   padding: 3px;
+   left: 20px;
+   font-weight: normal;
+   cursor: default;
+ }

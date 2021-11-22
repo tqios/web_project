@@ -1,13 +1,132 @@
-.login {
-    position : absolute;
-    left : 50%;
-    top : 25%;
-    transform: translate(-50%, -50%);
-  
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: royalblue;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 10;
+    min-width: 700px;
+    max-width: 1000px;
+    border-bottom: 1px solid black;
+  }
+  #title {
+    display: inline-block;
+    padding: 0 20px;
+    width: 60%;
   }
   
-  .loginor {
-    position : absolute;
+  .menu_header ul {
+    list-style: none;
+    display: inline;
+    padding: 5px 0;
+  }
+  .menu_header ul li {
+    display: inline;
+    padding: 0 5px;
+  }
+
+body {
+    width:80%;
+    height:90%;
+    margin: 0;
+      padding-top: 100px;
+      padding-bottom: 80px;
+      background-repeat: no-repeat;
+      background:white;
+  }
+  
+  .loginForm {
+    position:absolute;
+    width:300px;
+    height:400px;
+    padding: 30px, 20px;
+    background-color:#FFFFFF;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+  }
+  
+  .loginForm h2{
     text-align: center;
-  
+    margin: 30px;
   }
+  
+  .idForm{
+    border-bottom: 2px solid black;
+    margin: 30px;
+    padding: 10px 10px;
+  }
+  
+  .passForm{
+    border-bottom: 2px solid black;
+    margin: 30px;
+    padding: 10px 10px;
+  }
+  
+  .id {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: black;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .pw {
+    width: 100%;
+    border:none;
+    outline:none;
+    color: black;
+    font-size:16px;
+    height:25px;
+    background: none;
+  }
+  
+  .loginid {
+    position:relative;
+    left:40%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width:80%;
+    height:40px;
+    background: rgb(255, 85, 42);
+    background-position: left;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+  }
+
+  .loginpw {
+    position:relative;
+    left:40%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    width:80%;
+    height:40px;
+    background: rgb(255, 85, 42);
+    background-position: left;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+  }
+  

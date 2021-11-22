@@ -1,4 +1,4 @@
-h1, h3, p, div {
+h1, h3, p, div, body  {
   margin: 0;
   padding: 0;
 }
@@ -126,11 +126,9 @@ article {
 .episode_img {
   float: left;
   padding: 10px 0;
-  width: 100px;
   height: 100px;
-}
-.episode_link {
-  display: block;
+  width: 150px;
+  margin-right: 20px;
 }
 .episode_info {
   margin: 35px 0;
