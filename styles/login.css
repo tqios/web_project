@@ -101,7 +101,7 @@ body {
     margin-bottom: 40px;
     width:80%;
     height:40px;
-    background: rgb(255, 85, 42);
+    background: rgb(53, 53, 53);
     background-position: left;
     background-size: 200%;
     color:white;
@@ -119,7 +119,7 @@ body {
     margin-bottom: 40px;
     width:80%;
     height:40px;
-    background: rgb(255, 85, 42);
+    background: rgb(53, 53, 53);
     background-position: left;
     background-size: 200%;
     color:white;
@@ -129,4 +129,6 @@ body {
     transition: 0.4s;
     display:inline;
   }
-  
+  .loginpw a{
+    color: white;
+  }

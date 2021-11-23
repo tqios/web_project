@@ -2,49 +2,85 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인</title>
-  <link type="text/css" rel="stylesheet" href="../styles/search.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹툰페이지</title>
+    <script type="text/javascript" src="../js/search.js"></script>
+    <link type="text/css" rel="stylesheet" href="../styles/search.css">
 </head>
 
-<body width="100%" height="100%">
-
-  <div id="wrap">
-    <header id="header" class="header_fixed">
-      <a href="../index.html">
-        <h1 id="title">웹툰페이지</h1>
-      </a>
-      <span class="menu_header">
-        <ul>
-          <li>
-            <a href="./search.html">
-              <span>검색</span>
+<body>
+    <div id="wrap">
+        <header id="header" class="header_fixed">
+            <a href="../../../index.html">
+                <h1 id="title">웹툰페이지</h1>
             </a>
-          </li>
-          <li>
-            <a href="./mylibrary.html">
-              <span>내서재</span>
-            </a>
-          </li>
-          <li>
-            <a href="./login.html">
-              <span>내정보</span>
-            </a>
-          </li>
-        </ul>
-      </span>
-    </header>
+            <span class="menu_header">
+                <ul>
+                    <li>
+                        <a href="./search.html">
+                            <span>검색</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./mylibrary.html">
+                            <span>내서재</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <span>내정보</span>
+                        </a>
+                    </li>
+                </ul>
+            </span>
+        </header>
+    </div>
+    <section>
+        <div class="searchBox">
+            <button>검색 <input type="text" id="search" onkeyup="filter()" placeholder="제목 또는 작가로 검색"
+                    width="500" /></button>
 
-    <form action class="./webtoonsearch">
+        </div>
 
-      <fieldset>
-        <ul>
-          <label for="search_name">검색</label>
-          <input id="search" placeholder="작품명, 작가, 장르" autocomplete='off' />
-          <a href="../index.html">닫기</a>
-        </ul>
-      </fieldset>
+        <div class="listBox">
+            <div class="listInner">
+                <a href="../html/daily_contents/mon/mon1.html"><img src="../image/mon/mon1.png"></a>
+                <span class="names">참교육&nbsp;</span>
+                <span class="writer">채용택/한가람</span>
+            </div>
+            <div class="listInner">
+                <a href="../html/daily_contents/mon/mon2.html"><img src="../image/mon/mon2.png"></a>
+                <span class="names">신의 탑&nbsp;</span>
+                <span class="writer">SIU</span>
+            </div>
+            <div class="listInner">
+                <a href="../html/daily_contents/mon/mon3.html"><img src="../image/mon/mon3.png"></a>
+                <span class="names">소녀의 세계&nbsp;</span>
+                <span class="writer">모랑지</span>
+            </div>
+            <div class="listInner">
+                <a href="../html/daily_contents/mon/mon4.html"><img src="../image/mon/mon4.png"></a>
+                <span class="names">팔이피플&nbsp;</span>
+                <span class="writer">매미/희세</span>
+            </div>
+            <div class="listInner">
+                <a href="../html/daily_contents/mon/mon5.html"><img src="../image/mon/mon5.png"></a>
+                <span class="names">혁신적 얼간이들&nbsp;</span>
+                <span class="writer">가스파드</span>
+            </div>
+            <div class="listInner">
+                <a href="../html/daily_contents/mon/mon6.html"><img src="../image/mon/mon6.png"></a>
+                <span class="names">장씨세가 호위무사&nbsp;</span>
+                <span class="writer">조형근/김인호</span>
+            </div>
+        </div>
+        </div>
+    </section>
 
-    </form>
+
+
+</body>
+
+</html>

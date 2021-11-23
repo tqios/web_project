@@ -1,56 +1,111 @@
-a {
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: royalblue;
+.wrap {
+    width: 100%;
 }
 
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background-color: white;
-    z-index: 10;
-    min-width: 700px;
-    max-width: 1000px;
-    border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: white;
+  z-index: 10;
+  min-width: 700px;
+  max-width: 1000px;
+  border-bottom: 1px solid black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: royalblue;
   }
-  #title {
-    display: inline-block;
-    padding: 0 20px;
-    width: 60%;
-  }
-  
-  .menu_header ul {
+
+.menu_header ul {
     list-style: none;
     display: inline;
     padding: 5px 0;
-  }
-  .menu_header ul li {
+}
+
+.menu_header ul li {
     display: inline;
     padding: 0 5px;
-  }
+}
+h1, p, div {
+    margin: 0;
+    padding: 0;
+}
 
-body {
-    position: absolute;
-    left : 50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-    width:60%;
-    height:80%;
+#title {
+    display: inline-block;
+    padding: 0 20px;
+    width: 60%;
+}
+#section {
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top: 0px;
     margin: 0 auto;
-      padding-top: 100px;
-      padding-bottom: 60px;
-      background-repeat: no-repeat;
-      background:white;
-  }
+    z-index: 8;
+    min-width: 700px;
+    max-width: 1000px;
+}
 
-.webtoonsearch {
-    position : absolute;
-    left : 50%;
-    top : 20%;
-    transform: translate(-50%, -50%);
-  }
+.searchBox {
+    position: fixed;
+    left: 25%;
+    top : 75px;
+    margin: 50px 0;
+}
+
+.listBox {
+    position: fixed;
+    left: 41%;
+    top : 150px;
+    max-width: 600px;
+}
+.listBox:hover{
+    color: rgb(148, 148, 148);
+}
+
+.listInner {
+    background-color: #d6d6d6;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+.names {
+    font-weight: bold;
+}
+
+.writer {
+    font-weight: bold;
+}
+button {
+    position: fixed;
+    top: 100px;
+    left: 750px;
+    width: 42px;
+    height: 42px;
+    border: 0px;
+    background: #202020;
+    outline: none;
+    float: right;
+    color: #ffffff;
+}
+input {
+    position: fixed;
+    top: 102px;
+    left: 800px;
+    font-size: 16px;
+    width: 325px;
+    padding: 10px;
+    border: 0px;
+    outline: dashed #42275a;
+    float: left;
+}
