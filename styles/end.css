@@ -108,11 +108,10 @@ a:hover {
 }
 .image {
   float: left;
+  /*image파일에 float속성을 사용해서 제목과 작가가 자연스럽게 배치되게 함 */
   padding: 10px;
 }
-.wr {
-  text-align: left;
-}
+
 #footer {
   position: relative;
   left: 0;

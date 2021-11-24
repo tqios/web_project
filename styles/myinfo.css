@@ -107,6 +107,7 @@ a:hover {
   display: inline;
 }
 
+/*외부 양식은 다른 css와 동일. 정보를 나타내는 세부 양식만 새로 만들었다*/
 .personal {
   margin: auto;
   width: 500px;

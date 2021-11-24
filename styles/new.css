@@ -108,11 +108,10 @@ a:hover {
 }
 .image {
   float: left;
+  /*end.css와 동일*/
   padding: 10px;
 }
-.wr {
-  text-align: left;
-}
+
 #footer {
   position: relative;
   left: 0;
