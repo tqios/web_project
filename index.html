@@ -11,6 +11,7 @@
 
 <body>
   <div id="wrap">
+    <!-- 상단의 고정 헤더 -->
     <header id="header" class="header_fixed">
       <a href="">
         <h1 id="title">웹툰페이지</h1>
@@ -35,7 +36,7 @@
         </ul>
       </span>
     </header>
-
+    <!-- 신작 요일 완결 웹툰을 볼 수 있는 선택 바 -->
     <nav id="nav" class="nav_fixed">
       <div class="menu_nav">
         <ul>
@@ -62,36 +63,46 @@
       <article class="today">
 
         <div class="content">
-          <!--전체를 감쌀 뼈대-->
+          <!--슬라이드 전체 몸통-->
           <div class="slides">
-            <!--슬라이드 아이템을 감쌀 뼈대-->
-            <div class="slidemain"><img src="./image/slide/slideone.PNG" alt=""></div>
-            <div class="slidemain"><img src="./image/slide/slidetwo.PNG" alt=""></div>
-            <div class="slidemain"><img src="./image/slide/slidethree.PNG" alt=""></div>
-            <div class="slidemain"><img src="./image/slide/slidefour.PNG" alt=""></div>
-            <div class="slidemain"><img src="./image/slide/slidefive.PNG" alt=""></div>
+            <!--큰 슬라이드-->
+            <div class="slide_item"><img src="./image/slide/slideone.PNG" alt=""></div>
+            <!--슬라이드될 아이템들 -->
+            <div class="slide_item"><img src="./image/slide/slidetwo.PNG" alt=""></div>
+            <div class="slide_item"><img src="./image/slide/slidethree.PNG" alt=""></div>
+            <div class="slide_item"><img src="./image/slide/slidefour.PNG" alt=""></div>
+            <div class="slide_item"><img src="./image/slide/slidefive.PNG" alt=""></div>
+            <div class="slide_item"><img src="./image/slide/slidesix.PNG" alt=""></div>
           </div>
-          <div class="minislides">
-            <!--썸네일을 감쌀 뼈대 -->
-            <div class="slidemini"><img src="./image/slide/slideone.PNG" alt="" width="98px" height="50px"></div>
+          <div class="Minislide">
+            <!--미니 슬라이드 -->
+            <div class="minislide_item"><img src="./image/slide/slideone.PNG" alt="" width="98px" height="50px"></div>
             <!--썸네일 아이템들 -->
-            <div class="slidemini"><img src="./image/slide/slidetwo.PNG" alt="" width="98px" height="50px"></div>
-            <div class="slidemini"><img src="./image/slide/slidethree.PNG" alt="" width="98px" height="50px"></div>
-            <div class="slidemini"><img src="./image/slide/slidefour.PNG" alt="" width="98px" height="50px"></div>
-            <div class="slidemini"><img src="./image/slide/slidefive.PNG" alt="" width="98px" height="50px"></div>
+            <div class="minislide_item"><img src="./image/slide/slidetwo.PNG" alt="" width="98px" height="50px"></div>
+            <div class="minislide_item"><img src="./image/slide/slidethree.PNG" alt="" width="98px" height="50px"></div>
+            <div class="minislide_item"><img src="./image/slide/slidefour.PNG" alt="" width="98px" height="50px"></div>
+            <div class="minislide_item"><img src="./image/slide/slidefive.PNG" alt="" width="98px" height="50px"></div>
+            <div class="minislide_item"><img src="./image/slide/slidesix.PNG" alt="" width="98px" height="50px"></div>
           </div>
         </div>
+        <script src="./js/index.js"></script>
       </article>
-      <script src="./js/index.js"></script>
+
       <article>
+        <!-- 요일별 웹툰을 전체적으로 묶는 list_daily -->
         <div class=list_daily>
+          <!-- 요일별 웹툰의 title -->
           <div class=list_daily_title>
             <h3>요일별 웹툰</h3>
           </div>
+          <!-- 요일별 웹툰들을 담는 list_daily_all -->
           <div id="list_daily_all">
+            <!-- 월요일 웹툰의 열 -->
             <div class=list_daily_col>
+              <!-- 월요일 웹툰 열에 있는 웹툰들 -->
               <div class=list_daily_col_inner>
                 <h4 class="mon">월요일</h4>
+                <!-- list로 웹툰의 사진과 제목을 넣음 -->
                 <ul>
                   <li>
                     <div>
@@ -145,9 +156,12 @@
                 </ul>
               </div>
             </div>
+            <!-- 화요일 웹툰의 열 -->
             <div class=list_daily_col>
+              <!-- 화요일 웹툰 열에 있는 웹툰들 -->
               <div class=list_daily_col_inner>
                 <h4 class="tue">화요일</h4>
+                <!-- list로 웹툰의 사진과 제목을 넣음 -->
                 <ul>
                   <li>
                     <div>
@@ -203,9 +217,12 @@
                 </ul>
               </div>
             </div>
+            <!-- 수요일 웹툰의 열 -->
             <div class=list_daily_col>
+              <!-- 수요일 웹툰 열에 있는 웹툰들 -->
               <div class=list_daily_col_inner>
                 <h4 class="wed">수요일</h4>
+                <!-- list로 웹툰의 사진과 제목을 넣음 -->
                 <ul>
                   <li>
                     <div>
@@ -259,9 +276,12 @@
                 </ul>
               </div>
             </div>
+            <!-- 목요일 웹툰의 열  -->
             <div class=list_daily_col>
+              <!-- 목요일 웹툰 열에 있는 웹툰들 -->
               <div class=list_daily_col_inner>
                 <h4 class="thu">목요일</h4>
+                <!-- list로 웹툰의 사진과 제목을 넣음 -->
                 <ul>
                   <li>
                     <div>
@@ -315,9 +335,12 @@
                 </ul>
               </div>
             </div>
+            <!-- 금요일 웹툰의 열 -->
             <div class=list_daily_col>
+              <!-- 금요일 웹툰 열에 있는 웹툰들  -->
               <div class=list_daily_col_inner>
                 <h4 class="fri">금요일</h4>
+                <!-- list로 웹툰의 사진과 제목을 넣음 -->
                 <ul>
                   <li>
                     <div>
@@ -371,9 +394,12 @@
                 </ul>
               </div>
             </div>
+            <!-- 토요일 웹툰의 열 -->
             <div class=list_daily_col>
+              <!-- 토요일 웹툰 열에 있는 웹툰들  -->
               <div class=list_daily_col_inner>
                 <h4 class="sat">토요일</h4>
+                <!-- list로 웹툰의 사진과 제목을 넣음 -->
                 <ul>
                   <li>
                     <div>
@@ -427,9 +453,12 @@
                 </ul>
               </div>
             </div>
+            <!-- 일요일 웹툰의 열 -->
             <div class=list_daily_col>
+              <!-- 일요일 웹툰 열에 있는 웹툰들 -->
               <div class=list_daily_col_inner>
                 <h4 class="sun">일요일</h4>
+                <!-- list로 웹툰의 사진과 제목을 넣음 -->
                 <ul>
                   <li>
                     <div>
@@ -487,6 +516,7 @@
         </div>
       </article>
     </section>
+    <!-- footer -->
     <footer id="footer">
       <div>
         <p>

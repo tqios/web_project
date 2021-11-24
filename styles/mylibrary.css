@@ -2,18 +2,21 @@ h1, h3, p, div, body  {
   margin: 0;
   padding: 0;
 }
-
+/* 페이지를 가로 전체를 보여줌 */
 .wrap {
   width: 100%;
 }
+/* 링크의 기본 색을 검은색으로 하고 꾸밈을 없앤다 */
 a {
   color: black;
   text-decoration: none;
 }
+/* 커서가 링크 위에 올라왔을 때 text의 색을 푸른색으로 변하게 한다 */
 a:hover {
   color: royalblue;
 }
-
+/* 상단에 헤더를 고정시키고 스크롤을 내려도 보일 수 있게 z-index를 설정한다
+    최소 너비를 700px, 최대 너비를 1000px로 한다 */
 #header {
   position: fixed;
   top: 0;
@@ -27,11 +30,14 @@ a:hover {
   max-width: 1000px;
   border-bottom: 1px solid black;
 }
+/* 페이지의 이름인 '웹툰페이지'의 영역과 패딩 설정 */
 #title {
   display: inline-block;
   padding: 0 20px;
   width: 60%;
 }
+/* 헤더의 menu인 검색 내서재 내정보를 list-style을 없애고 
+inline요소로 변경하여 한 라인에 나열시킨다 */
 .menu_header ul {
   list-style: none;
   display: inline;
@@ -41,30 +47,35 @@ a:hover {
   display: inline;
   padding: 0 5px;
 }
-
+/* section을 기존 위치에서 아래로 83px 내린다
+margin을 0 auto로 주어 가운데 정렬을 시킨다
+최소 너비를 700px, 최대 너비를 1000px로 한다 */
 #section {
   position: absolute; 
   left: 0;
   right: 0;
-  top: 80px;
+  top: 83px;
   margin: 0 auto;
   z-index: 8;
   min-width: 700px;
   max-width: 1000px;
 }
-
+/* 내서제에 있는 작품의 개수 */
 #contents_num {
   padding: 10px 0 0 40px;
 }
+/* list 스타일을 없앤다 */
 .list_contents {
   list-style: none;
   padding: 0;
 }
+/* 새로운 content에서 float설정을 없앤다 */
 .list_content {
   clear: both;
   padding-left: 40px;
   border-bottom: 1px solid black;
 }
+/* 작품의 이미지, 정보를 float로 왼쪽으로 흐르게 한다 */
 .content_img {
   float: left;
   padding: 10px;
@@ -81,12 +92,11 @@ a:hover {
   max-width: 500px;
   height: 50px;
 }
-.content{
-  display: inline;
-}
+/* 작품의 제목과 작가 사이에 10px의 여백을 둔다 */
 .content_writer {
   padding-top: 10px;
 }
+/* 삭제 spnn을 기존 위치에서 오른쪽으로 100px, 아래로 50px 옮긴다 */
 .delete_content {
   position: relative;
   left: 100px;

@@ -55,12 +55,13 @@ a:hover {
 article {
   border-bottom: 1px solid black;
 }
-
+/* 웹툰 정보의 이미지 */
 .comic_img {
   padding-left: 20px;
   width: 150px;
   height: 150px;
 }
+/* 웹툰 정보를 이미지 옆에 배열 */
 .info {
   float: left;
   padding-left: 15px;
@@ -85,6 +86,7 @@ article {
   padding-left: 0px;
   font-size: 13px;
 }
+/* 버튼을 list로 구현하여 스타일을 없애고 inline으로 변경하여 나열 */
 .button_group {
   padding: 0;
   list-style: none;
@@ -108,6 +110,7 @@ article {
   text-align: left;
   padding: 5px;
 } 
+/* 첫화부터 버튼  */
 .sort_as {
   padding: 5px;
   margin-left: 40px;
@@ -118,11 +121,13 @@ article {
   list-style: none;
   padding: 0;
 }
+/* 새로운 content에서 float설정을 없앤다 */
 .list_content {
   clear: both;
   padding-left: 40px;
   border-bottom: 1px solid black;
 }
+/* 이미지와 정보를  float로 왼쪽으로 흐르게 한다 */
 .episode_img {
   float: left;
   padding: 10px 0;

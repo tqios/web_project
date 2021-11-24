@@ -12,6 +12,7 @@
 
 <body>
   <div id="wrap">
+    <!-- 상단의 고정 헤더 -->
     <header id="header" class="header_fixed">
       <a href="../../../index.html">
         <h1 id="title">웹툰페이지</h1>
@@ -56,10 +57,10 @@
 
             <ul class="button_group">
               <li>
-                <a href="">첫화보기</a>
+                <a href="./tue6-1.html">첫화보기</a>
               </li>
               <li>
-                <a href="">서재에 담기</a>
+                <a href="../../mylibrary.html">서재에 담기</a>
               </li>
               <li>
                 <a href="">좋아요</a>
@@ -68,11 +69,12 @@
           </div>
         </div>
       </article>
+      <!-- 웹툰 content(image) -->
       <article class="image">
         <img src="../../../image/tue/tue6-1.jpg" alt="">
       </article>
+      <!-- 작가의 말 -->
       <article class="comment">
-        <!-- 작가의 말 -->
         <div class="writer_c">
           <h3>
             작가의 말
@@ -89,6 +91,7 @@
           <h4>댓글 쓰기</h4>
           <textarea id="writing_comment" cols="90" rows="5" placeholder="스포일러, 악플은 경고조치 없이 삭제됩니다."></textarea>
           <button onclick="alert('댓글이 등록되었습니다.')">등록</button>
+          <!-- 댓글 등록 버튼을 누르면 '댓글이 등록되었습니다.'라는 알림창을 띄운다 -->
         </div>
         <!-- 독자의 댓글 list -->
         <ul class="reader_c">
@@ -112,31 +115,39 @@
       </article>
 
       <span>
+        <!-- 리모컨  -->
         <table id="remote">
           <tr>
+            <!-- 리모컨의 title , 이 곳을 선택해서 위치 조정 가능 -->
             <th class="remote_t" colspan="3">리모컨
               <span id="close_r">X</span>
             </th>
           </tr>
           <tr>
             <td colspan="3">
+              <!-- 현재 웹툰의 제목  -->
               <p>하루만 네가 되고 싶어</p>
             </td>
           </tr>
           <tr>
+            <!-- 이전 화로 넘어가기 ( 1화라 이전화가 없음 ) -->
             <td>&lt;</td>
             <td>1화</td>
+            <!-- 다음 화로 넘어가기 (link 연결) -->
             <td>
               <a href="./tue6-2.html">&gt;</a>
             </td>
           </tr>
           <tr>
+            <!-- 페이지의 맨 위로 올라가기 -->
             <td>
               <span id="uppage">맨위로</span>
             </td>
+            <!-- 페이지의 맨 아래로 내려가기 -->
             <td>
               <span id="downpage">아래로</span>
             </td>
+            <!-- 본 회차의 목록으로 가기 -->
             <td><a href="./tue6.html">목록</a></td>
           </tr>
         </table>

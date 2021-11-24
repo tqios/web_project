@@ -102,34 +102,41 @@ a:hover ,button:hover{
   width: 700px;
   margin: 0 auto;
 }
+/* 작가의말 왼쪽정렬 */
 .writer_c{
   text-align: left;
   border-bottom: 1px solid black;
 }
+/* '작가의 말' */
 .writer_c h3 {
   border-bottom: 1px solid gainsboro;
   padding: 10px;
 }
+/* 작가 */
 .writer_c span {
   font-size: 15px;
   font-weight: normal;
 }
+/* 작가의 말 */
 .writer_c p {
   padding: 10px;
 }
-
+/* 댓글 쓰는 창*/
 #writing_c {
   text-align: left;
   border-bottom: 1px solid black;
 }
-
+/* '댓글 쓰기' */
 #writing_c h4 {
   padding: 10px;
 }
+/* 댓글을 작성할 수 있는 textarea  
+사이즈를 조정할 수 없도록 설정*/
 #writing_c textarea{
   margin-left: 10px;
   resize: none;
 }
+/* 댓글 등록 버튼 */
 #writing_c button {
   position: relative;
   bottom: 7px;
@@ -137,7 +144,7 @@ a:hover ,button:hover{
   border: 1px solid black;
 }
 
-
+/* 독자의 댓글 list  */
 .reader_c {
   text-align: left;
   list-style: none;
@@ -147,15 +154,19 @@ a:hover ,button:hover{
 .reader_c li {
   border-bottom: 1px solid black;
 }
+/* 독자의 이름  */
 .reader_c h4 {
   border-bottom: 1px solid gainsboro;
   padding: 10px;
 }
+/* 독자의 댓글  */
 .reader_c p {
   padding: 10px;
   font-size: 13px;
 }
-
+/* 리모컨 */
+/* 고정 위치로 지정
+  커서를 default로 지정 */
 #remote{
   min-width: 150px;
   position: fixed;
@@ -165,6 +176,7 @@ a:hover ,button:hover{
   background-color: whitesmoke;
   cursor: default;
 }
+/* 리모컨 table의 크기, 배경색, 글자 중앙정렬 */
 #remote td, #remote th{
   border: 1px solid gainsboro;
   height: 30px;
@@ -172,9 +184,11 @@ a:hover ,button:hover{
   font-size: 13px;
   text-align: center;
 }
+/* th에 커서가 위치하면 cursor을 move로 바꿈 */
 #remote th {
   cursor:move;
 }
+/* 리모컨을 삭제할 수 있는 X표시*/
  #close_r {
    position: relative;
    padding: 3px;
