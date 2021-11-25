@@ -56,5 +56,80 @@ window.addEventListener("load", function () {
     offset.y = e.offsetY;
   };
 });
+// 댓글창 구현
+
+function clickbutton() {
+  const insertbar = document.querySelector("#commentinput");
+  const comments = document.querySelector("#comments");
+  const commentcount = document.querySelector('#count');
+
+  function timeset() {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth();
+    const dates = date.getDate();
+    const hour = date.getHours();
+    const min = date.getMinutes();
+    const sec = date.getSeconds();
+
+    const time = year + '-' + month + '-' + dates + ' ' + hour + ':' + min + ':' + sec;
+    return time;
+  }
+
+  function makeid() {
+    let alphabet = 'abcdef123456';
+    let getid = '';
+    for (let i = 0; i < 8; i++) {
+      let index = Math.floor(Math.random(10) * alphabet.length);
+      getid += alphabet[index];
+    }
+    return getid;
+  }
+
+  function printcomment(comment) {
+    const name = document.createElement('div');
+    const somethinginput = document.createElement('span');
+    const printtime = document.createElement('div');
+    const numberofspan = document.createElement('span');
+    const commentList = document.createElement('div');
+    const deletebutton = document.createElement('button');
+    deletebutton.className = "deleteComment";
+    deletebutton.innerHTML = "삭제";
+    commentList.className = "acomment";
+    name.className = "name";
+    somethinginput.className = "somethinginput";
+    printtime.className = "time";
+    name.innerHTML = makeid();
+    name.appendChild(deletebutton);
+    somethinginput.innerText = comment;
+    printtime.innerHTML = timeset();
+    numberofspan.innerHTML = 0;
+    commentList.appendChild(name);
+    commentList.appendChild(somethinginput);
+    commentList.appendChild(printtime);
+    comments.prepend(commentList);
+    deletebutton.addEventListener("click", deleteComments);
+  }
+
+  function deleteComments(event) {
+    const deletebutton = event.target;
+    const list = deletebutton.parentNode.parentNode;
+    comments.removeChild(list);
+
+    if (commentcount.innerHTML <= '0') {
+      commentcount.innerHTML = 0;
+    } else {
+      commentcount.innerHTML--;
+    }
+  }
 
 
+  const nowvalue = insertbar.value;
+  if (!nowvalue.length) {
+    alert("댓글을 입력해주세요!!");
+  } else {
+    printcomment(nowvalue);
+    commentcount.innerHTML++;
+    insertbar.value = '';
+  }
+}

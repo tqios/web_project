@@ -1,4 +1,4 @@
-h1, h3, h4, p, div, body {
+h1, h3, h4, p,body {
   margin: 0;
   padding: 0;
 }
@@ -121,49 +121,6 @@ a:hover ,button:hover{
 .writer_c p {
   padding: 10px;
 }
-/* 댓글 쓰는 창*/
-#writing_c {
-  text-align: left;
-  border-bottom: 1px solid black;
-}
-/* '댓글 쓰기' */
-#writing_c h4 {
-  padding: 10px;
-}
-/* 댓글을 작성할 수 있는 textarea  
-사이즈를 조정할 수 없도록 설정*/
-#writing_c textarea{
-  margin-left: 10px;
-  resize: none;
-}
-/* 댓글 등록 버튼 */
-#writing_c button {
-  position: relative;
-  bottom: 7px;
-  background-color: white;
-  border: 1px solid black;
-}
-
-/* 독자의 댓글 list  */
-.reader_c {
-  text-align: left;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.reader_c li {
-  border-bottom: 1px solid black;
-}
-/* 독자의 이름  */
-.reader_c h4 {
-  border-bottom: 1px solid gainsboro;
-  padding: 10px;
-}
-/* 독자의 댓글  */
-.reader_c p {
-  padding: 10px;
-  font-size: 13px;
-}
 /* 리모컨 */
 /* 고정 위치로 지정
   커서를 default로 지정 */
@@ -196,3 +153,55 @@ a:hover ,button:hover{
    font-weight: normal;
    cursor: default;
  }
+/* 댓글창 */
+#commentvalues {
+  width: 100%;
+}
+#commentcount {
+  margin-bottom: 10px;
+}
+#commentinput {
+  width: 50%;
+  height: 3.3em;
+}
+#submit {
+  background-color: #494949;
+  width:  88px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+#comments {
+  margin-top: 10px;
+  margin-left: 230px;
+}
+.acomment {
+  margin: 15px;
+  padding: 0.5em;
+  border-bottom: 1px solid #c1bcba;
+  width: 50%;
+}
+.acomment .name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.acomment .somethinginput {
+  font-size: 13px;
+  font-style: italic;
+}
+.acomment .time {
+  font-size: 10px;
+  color: #c1bcba;
+  font-style: oblique;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.acomment .deleteComment {
+  background-color: #3d3d3d;
+  color: rgb(228, 228, 228);
+}

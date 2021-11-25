@@ -91,8 +91,9 @@ h1, p, div {
 /* button의 크기를 조정하고 색상을 조정한후 외곽선을 없게함 */
 button {
     position: fixed;
-    top: 100px;
-    left: 750px;
+    left: 37.5%;
+    top : 102px;
+    max-width: 600px;
     width: 42px;
     height: 42px;
     border: 0px;
@@ -104,8 +105,9 @@ button {
 /* input의 크기를 조정하고 색상을 조정한후 외곽선을 점선으로 표현 */
 input {
     position: fixed;
-    top: 102px;
-    left: 800px;
+    left: 41%;
+    top : 103px;
+    max-width: 600px;
     font-size: 16px;
     width: 325px;
     padding: 10px;

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="../../../styles/episode.css">
-  <script src="../../../js/episode.js"></script>
   <title>tue6-1</title>
 </head>
 
 <body>
+  <script src="../../../js/episode.js"></script>
   <div id="wrap">
     <!-- 상단의 고정 헤더 -->
     <header id="header" class="header_fixed">
@@ -88,30 +88,16 @@
         </div>
         <!-- 댓글 쓰기 -->
         <div id="writing_c">
-          <h4>댓글 쓰기</h4>
-          <textarea id="writing_comment" cols="90" rows="5" placeholder="스포일러, 악플은 경고조치 없이 삭제됩니다."></textarea>
-          <button onclick="alert('댓글이 등록되었습니다.')">등록</button>
-          <!-- 댓글 등록 버튼을 누르면 '댓글이 등록되었습니다.'라는 알림창을 띄운다 -->
+          <br>
+          <div id="commentvalues">
+            <div id="commentcount">댓글 <span id="count">0</span>개</div>
+            <input id="commentinput" placeholder="댓글을 입력해 주세요.">
+            <button id="submit" onclick="clickbutton()"> 등록 </button>
+          </div>
+
+          <div id="comments"></div>
         </div>
-        <!-- 독자의 댓글 list -->
-        <ul class="reader_c">
-          <li>
-            <h4>reader 1</h4>
-            <p>뭐야 여주 기 개쎄... 행동력 장난아니네 카카페냐고 욕하려고 들어왔는데 닥치고 꼬박꼬박 봐야지</p>
-          </li>
-          <li>
-            <h4>reader 2</h4>
-            <p>판타지 별로 안미는 네이버의 판타지작입니다!!그만큼 재밌다는 뜻이겠죵~~?믿고 보세요</p>
-          </li>
-          <li>
-            <h4>reader 3</h4>
-            <p>아 세상에 로판 덕후는 여기에 뼈를 묻습니다</p>
-          </li>
-          <li>
-            <h4>reader 4</h4>
-            <p>하네되 런칭을 축하드립니다 ㅠㅠㅠㅠ 간절히 기다렸어요!!!!!!!! 이대로 쭉쭉 위로 올라가 주세요~~~!!!!!</p>
-          </li>
-        </ul>
+
       </article>
 
       <span>
