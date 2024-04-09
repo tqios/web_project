@@ -1,6 +1,6 @@
 .wrap {
     width: 100%;
-}
+} /* 너비를 설정 */
 
 #header {
   position: fixed;
@@ -14,7 +14,7 @@
   min-width: 700px;
   max-width: 1000px;
   border-bottom: 1px solid black;
-}
+} /* id가 header인것의 위치를 조정하고 색깔, 크기 조정 */
 
 a {
     color: black;
@@ -24,7 +24,7 @@ a {
 a:hover {
     color: royalblue;
   }
-
+/* a 태그가 붙은것에 마우스를 올리면 색깔이 royalblue로 변경 */
 .menu_header ul {
     list-style: none;
     display: inline;
@@ -45,6 +45,7 @@ h1, p, div {
     padding: 0 20px;
     width: 60%;
 }
+/* section 부분의 위치,크기 조정 */
 #section {
     position: fixed; 
     left: 0;
@@ -55,30 +56,31 @@ h1, p, div {
     min-width: 700px;
     max-width: 1000px;
 }
-
+/* searchbox 부분의 위치 조정 */
 .searchBox {
     position: fixed;
     left: 25%;
     top : 75px;
     margin: 50px 0;
 }
-
+/* listbox 부분의 위치 조정 */
 .listBox {
     position: fixed;
     left: 41%;
     top : 150px;
     max-width: 600px;
 }
+/* listbox위에 커서를 올리면 색깔 변경 */
 .listBox:hover{
     color: rgb(148, 148, 148);
 }
-
+/* listinner 부분의 배경색을 설정하고 위치 조정 */
 .listInner {
     background-color: #d6d6d6;
     margin: 10px 5px;
     padding: 10px;
 }
-
+/* names, writer의 폰트를 bold 형식으로 변경(굵게) */
 .names {
     font-weight: bold;
 }
@@ -86,10 +88,12 @@ h1, p, div {
 .writer {
     font-weight: bold;
 }
+/* button의 크기를 조정하고 색상을 조정한후 외곽선을 없게함 */
 button {
     position: fixed;
-    top: 100px;
-    left: 750px;
+    left: 37.5%;
+    top : 102px;
+    max-width: 600px;
     width: 42px;
     height: 42px;
     border: 0px;
@@ -98,14 +102,16 @@ button {
     float: right;
     color: #ffffff;
 }
+/* input의 크기를 조정하고 색상을 조정한후 외곽선을 점선으로 표현 */
 input {
     position: fixed;
-    top: 102px;
-    left: 800px;
+    left: 41%;
+    top : 103px;
+    max-width: 600px;
     font-size: 16px;
     width: 325px;
     padding: 10px;
     border: 0px;
-    outline: dashed #42275a;
+    outline: dashed #303030;
     float: left;
 }

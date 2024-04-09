@@ -11,9 +11,11 @@
 </head>
 
 <body>
+    <!-- 웹툰 페이지의 상단 바 -->
+    <!-- 이후 나오는 페이지 이동은 a태그로 구현 -->
     <div id="wrap">
         <header id="header" class="header_fixed">
-            <a href="../../../index.html">
+            <a href="../index.html">
                 <h1 id="title">웹툰페이지</h1>
             </a>
             <span class="menu_header">
@@ -37,11 +39,13 @@
             </span>
         </header>
     </div>
+    <!-- 검색바 text 형식으로 입력 가능하게 함 -->
+    <!-- 처음에는 onkeyup으로 엔터클릭시 구현하게 할 예정이였지만 구현 X -->
     <section>
         <div class="searchBox">
             <button>검색 <input type="text" id="search" onkeyup="filter()" placeholder="제목 또는 작가로 검색"
                     width="500" /></button>
-
+            <!-- 웹툰 정보가 들어있는 listinner 라는 박스 생성 -->
         </div>
 
         <div class="listBox">
@@ -71,9 +75,9 @@
                 <span class="writer">가스파드</span>
             </div>
             <div class="listInner">
-                <a href="../html/daily_contents/mon/mon6.html"><img src="../image/mon/mon6.png"></a>
-                <span class="names">장씨세가 호위무사&nbsp;</span>
-                <span class="writer">조형근/김인호</span>
+                <a href="../html/daily_contents/tue/tue6.html"><img src="../image/tue/tue6.png" width="90" height="90"></a>
+                <span class="names">하루만 네가 되고싶어&nbsp;</span>
+                <span class="writer">삼</span>
             </div>
         </div>
         </div>

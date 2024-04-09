@@ -2,18 +2,21 @@ h1, p, div, body {
   margin: 0;
   padding: 0;
 }
-
+/* 페이지를 가로 전체를 보여줌 */
 .wrap {
   width: 100%;
 }
+/* 링크의 기본 색을 검은색으로 하고 꾸밈을 없앤다 */
 a {
   color: black;
   text-decoration: none;
 }
+/* 커서가 링크 위에 올라왔을 때 text의 색을 푸른색으로 변하게 한다 */
 a:hover {
   color: royalblue;
 }
-
+/* 상단에 헤더를 고정시키고 스크롤을 내려도 보일 수 있게 z-index를 설정한다
+    최소 너비를 700px, 최대 너비를 1000px로 한다 */
 #header {
   position: fixed;
   top: 0;
@@ -27,12 +30,14 @@ a:hover {
   max-width: 1000px;
   border-bottom: 1px solid black;
 }
+/* 페이지의 이름인 '웹툰페이지'의 영역과 패딩 설정 */
 #title {
   display: inline-block;
   padding: 0 20px;
   width: 60%;
 }
-
+/* 헤더의 menu인 검색 내서재 내정보를 list-style을 없애고 
+inline요소로 변경하여 한 라인에 나열시킨다 */
 .menu_header ul {
   list-style: none;
   display: inline;
@@ -42,19 +47,21 @@ a:hover {
   display: inline;
   padding: 0 5px;
 }
-
+/* 신규 요일 완결 웹툰을 선택할 수 있는 바를 헤더 밑에 고정시킨다 */
 #nav {
   background-color: white;
   position: fixed;
-  top: 83.4px;
+  top: 83px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 10;
+  z-index: 9;
   min-width: 700px;
   max-width: 1000px;
   border-bottom: 1px solid black;
 }
+/* 신규 요일 완결의 list-style을 없애고 
+inline요소로 변경하여 한 라인에 나열시킨다 */
 .menu_nav ul{
   list-style: none;
   text-align: center;
@@ -66,7 +73,9 @@ a:hover {
   letter-spacing: 3px;
 }
 
-
+/* section을 기존 위치에서 아래로 150px 내린다
+margin을 0 auto로 주어 가운데 정렬을 시킨다
+최소 너비를 700px, 최대 너비를 1000px로 한다 */
 #section {
   position: relative; 
   left: 0;
@@ -81,13 +90,17 @@ a:hover {
   min-width: 700px;
   margin: 0 auto;
 }
+/* 요일별 웹툰 글씨를 중앙정렬한다 */
 .list_daily_title{
   text-align: center;
 }
+/* 요일별 웹툰을 700px로 고정시키고 가운데정렬 */
 #list_daily_all {
   width: 700px;
   margin: 0 auto;
 }
+/* 요일별 웹툰의 열의 너비를 100px로 정하고 택스트를 중앙정렬한다
+display를 table-cell로 주어 td요소처럼 표현한다 */
 .list_daily_col {
   margin: 0 auto;
   width: 100px;
@@ -96,16 +109,17 @@ a:hover {
   padding: 0;
   border: 1px solid black;
 }
-
+/* 리스트의 스타일을 없애고 중앙정렬한다 */
 .list_daily_col_inner ul{
   list-style: none;
   text-align: center;
   padding: 0;
 }
+/* li요소를 inline으로 변경한다 */
 .list_daily_col_inner ul li{
   display: inline;
 }
-
+/* footer을 기존 위치에서 아래로 250px 내린다 */
 #footer {
   position: relative; 
   left: 0;
@@ -124,40 +138,43 @@ a:hover {
   margin: 0 auto;
   text-align: center;
 }
-.content{ /*컨텐츠 넓이지정*/
+
+.content{ /*슬라이드 전체 틀 몸통 너비*/
   position:relative;
   width:750px;
 }
-.slides { /*슬라이드 아이템이 나올 뼈대 지정*/
+
+.slides { /*큰 슬라이드 단일 사이즈 정하기*/
   width:600px;
   height:300px;
-  position:center;
+  position:relative;
 }
-.slidemain { /*슬라이드 아이템을 absolute로 겹쳐놓고 투명하게 하기*/
+.slide_item { /*큰 슬라이드 넘어갈 때마다 이전 슬라이드 투명하게*/
   position:absolute;
   width:600px;
   height:300px;
-  opacity:0;
-   transition:all 0.3s;
+  opacity:0; /*투명도*/
+  transition:all 0.2s;
 }
-.ontheSlide { /*현재 아이템에 붙여줄 클래스*/
+.ontheSlide { /*지금 위치한 슬라이드*/
   opacity:1;
-  transition:all 0.3s;
+  transition:all 0.2s;
 }
-.ontheminislides { /*현재 썸네일에 붙여줄 클래스*/
-  border: 1px solid black;
+.ontheMinislide { /*지금 위치한 미니 슬라이드*/
+  border: 2px solid black;
+  height: 50px;
 }
 
-.minislides { /*썸네일 아이템을 감쌀 뼈대*/
+.Minislide { /*미니 슬라이드 전체 틀 사이즈 정하기*/
   display:flex;
-  flex-flow:row wrap;
-  width:100%;
-  height:50px;
+  justify-content: center;
+  flex-flow:row;
+  width:98%;
+  height:48px;
   position:absolute;
   bottom:0px;
-  justify-content:center;
 }
 
-.slidemini { /*썸네일 아이템의 길이 설정*/
+.minislide_item { /*미니 슬라이드 단일 크기*/
   width:98px;
 }
